@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-pagy
+  namespace: jvm-build-xqqj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:0ca0a89c95b7aac9ceee325441178159b2c4d916660461d103f822042e923dbc
+        name: container-image
+        resources: {}
+status: {}
